@@ -105,7 +105,7 @@ class _UISelectionBurstState extends State<UISelectionBurst>
           ],
         ),
       ),
-    ).borderAll(Colors.green);
+    ).withBorder(Colors.green);
   }
 
   List<Widget> builButtonArray() => List.generate(buttonCount, (index) {
@@ -118,7 +118,7 @@ class _UISelectionBurstState extends State<UISelectionBurst>
               child: ElevatedButton(
                 onPressed: () => widget.onSelected(index),
                 child: Text(widget.prompts[index]),
-              ).opacity(animationController.value),
+              ).withOpacity(animationController.value),
             );
           },
         );
